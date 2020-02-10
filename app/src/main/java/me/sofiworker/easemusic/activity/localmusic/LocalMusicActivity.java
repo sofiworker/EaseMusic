@@ -80,7 +80,7 @@ public class LocalMusicActivity extends BaseActivity<LocalMusicPresenter> implem
     protected void initEvent() {
         mPresenter = new LocalMusicPresenter();
         mPresenter.attachView(this, mProvider);
-        mPresenter.setContext(this);
+//        mPresenter.setContext(this);
 
         List<BaseFragment> fragmentList = new ArrayList<>();
         fragmentList.add(new SingleFragment());
@@ -90,6 +90,5 @@ public class LocalMusicActivity extends BaseActivity<LocalMusicPresenter> implem
 
     @Override
     public void getMusicList(List<String> list) {
-
     }
 }

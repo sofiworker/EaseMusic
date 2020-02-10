@@ -20,8 +20,8 @@ public interface LocalMusicContract {
     }
 
     interface Presenter extends IBasePresenter<View> {
-        void setContext(Context context);
-        void getLocalMusicList();
+//        void setContext(Context context);
+//        void getLocalMusicList();
     }
 
     interface Model {

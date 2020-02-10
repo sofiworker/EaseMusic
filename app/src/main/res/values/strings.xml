@@ -47,4 +47,8 @@
     <string name="scan_local_music">扫描本地音乐</string>
 
     <string name="read_or_write_external_storage">请授予读写权限，否则无法扫描音乐</string>
+
+    <string name="name_of_song">歌曲名称</string>
+    <string name="singer">歌手</string>
+    <string name="share">分享</string>
 </resources>

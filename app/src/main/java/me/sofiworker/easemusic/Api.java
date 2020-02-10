@@ -3,8 +3,10 @@ package me.sofiworker.easemusic;
 import java.util.Map;
 
 import io.reactivex.Observable;
+import me.sofiworker.easemusic.bean.BannerBean;
 import me.sofiworker.easemusic.bean.SongListBean;
 import me.sofiworker.easemusic.bean.UserBean;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
 import retrofit2.http.QueryMap;
@@ -22,4 +24,7 @@ public interface Api {
 
     @POST("user/playlist")
     Observable<SongListBean> getPlayList(@Query("uid") int uid);
+
+    @GET("/banner")
+    Observable<BannerBean> getBanner(@Query("type") int type);
 }
